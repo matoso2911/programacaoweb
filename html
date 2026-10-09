@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Título</h1>
+    <nav>
+        <a href="https://ifsc.edu.br" target="_blank">Site do IFSC</a>
+    </nav>
+
+    <div>
+        <p>Lorem ipsum dolor <del>sit amet consectetur </del>adipisicing elit. Quaerat recusandae sint unde veritatis saepe aut reiciendis<mark> minus vel, vero odit temporibus</mark> adipisci voluptatem distinctio nisi at possimus iure eos ad!</p>
+        <p>
+         10<sub>2</sub> <br>
+         6.23x10<sup>23</sup>
+        </p>
+        <span>IFSC</span>
+        <span>IFSC</span>
+        <input type = "text">
+        <input type = "text">
+        <p>IFSC</p>
+        <p>IFSC</p>
+    </div>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ol type="I" start="10">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <dl>
+        <dt>Item 1</dt>
+        <dd>Item 2</dd>
+    </dl>
+    
+    <HR></HR>
+    <table>
+        <caption>Churrasco 2026.2</caption>
+        <thead>
+        <tr></tr>
+        <tr>
+            <th>Índice</th>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Valor-item</th>
+            <th>Valor</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Carne</td>
+            <td>2</td>
+            <td>40,00</td>
+            <td>80,00</td>
+
+        </tr>
+         <tr>
+            <td>2</td>
+            <td>Carvão</td>
+            <td>1</td>
+            <td>20,00</td>
+            <td>20,00</td>
+        </tr>
+        <tr>
+            <td>3</td>
+
+            <td>Pão de alho</td>
+            <td>1</td>
+            <td>20,00</td>
+            <td>20,00</td>
+        </tr>
+        <tr>
+            <td colspan="4">Total:</td>
+            <td>120,00</td>
+        </tr>
+    </table>
+    <HR></HR>
+    <form action="https://google.com/search">
+        
+        <div>
+            <label for="busca">Termos de busca: </label>
+            <input id="busca" name="q" type="text" placeholder="Digite aqui..." >
+
+            <input type="color">
+            <input type="submit" value="Pesquisar">
+        </div>
+    </form>
+
+<canvas id="canvas" height="1000px" width="600px"> </canvas>
+
+<script>
+    // declarar variável em js
+    desenhando=false
+    
+    const ctx= canvas.getContext("2d");
+    ctx.lineWidth=5;
+    canvas.addEventListener("mousedown", (e)=> {
+        desenhando=true;
+        ctx.moveTo(e.offsetX, e.offsetY);
+    } )
+    canvas.addEventListener("mouseup", (e)=>{
+        desenhando=false;
+    } )
+
+    //capturar quando o usuário clicar
+
+    canvas.addEventListener("mousedown", (e)=>{
+        if( desenhando){
+            ctx.lineTo(e.offsetX, e.offsetY);
+            ctx.stroke();
+        }
+    })
+
+
+</script>
+
+</body>
+</html>
