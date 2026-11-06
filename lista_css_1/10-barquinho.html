@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividade 10 - Barquinho</title>
+<style>
+body { font-family: Arial; margin: 25px; } .cena { height: 380px; overflow: hidden; position: relative; background: linear-gradient(#b9e7fa, #edfaff 65%, #4c78ff 65%); } .mar { position: absolute; bottom: 0; width: 100%; height: 35%; background: #4164f6; overflow: hidden; } .mar::before, .mar::after { content: ''; position: absolute; width: 200%; height: 40px; left: -50%; border-radius: 50%; background: radial-gradient(ellipse, #74a3ff 30%, transparent 65%) repeat-x; background-size: 100px 40px; animation: onda 4s linear infinite; } .mar::before { top: -10px; } .mar::after { top: 15px; opacity: .6; animation-duration: 6s; } .barco { position: absolute; bottom: 26%; left: -130px; width: 130px; height: 90px; background-image: url('imagens/barco.svg'); background-repeat: no-repeat; background-size: contain; z-index: 2; animation: navegar 14s linear infinite, balancar 2s ease-in-out infinite alternate; } .nuvem { position: absolute; top: 90px; left: -150px; width: 95px; height: 30px; background: white; border-radius: 40px; box-shadow: 25px -15px 0 4px white, 50px 0 0 1px white; animation: passar 22s linear infinite; } @keyframes navegar { from { left: -130px; } to { left: 100%; } } @keyframes balancar { from { rotate: -5deg; } to { rotate: 5deg; } } @keyframes passar { from { left: -150px; } to { left: 100%; } } @keyframes onda { from { transform: translateX(0); } to { transform: translateX(100px); } }
+</style>
+</head>
+<body>
+<h1>Barquinho no mar</h1><div class="cena"><div class="nuvem"></div><div class="barco"></div><div class="mar"></div></div><p>O barco balança e atravessa o mar. A nuvem também se movimenta e as ondas usam pseudo-elementos.</p><a href="index.html">Voltar</a>
+</body>
+</html>

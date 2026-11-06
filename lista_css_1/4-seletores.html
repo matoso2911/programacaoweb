@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividade 4 - Seletores</title>
+<style>
+body { font-family: Arial; margin: 30px; }
+li { color: red; }
+.churras { color: green; }
+.fruta { color: gray; }
+li + li.churras { color: black; }
+.churras[draggable="true"] { color: magenta; }
+#lip1, #lip2, #lip3 { color: blue; }
+#lip3.fruta { color: orange; }
+ol > li.churras#lip5 { color: purple; }
+table { border-collapse: collapse; margin-top: 25px; }
+th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+</style>
+</head>
+<body>
+<h1>Atividade 4 - Especificidade dos seletores</h1>
+<ol>
+<li id="lip0">Abacaxi</li>
+<li class="fruta">Melão</li>
+<li id="lip2" class="fruta">Pera</li>
+<li id="lip3" class="fruta">Uva</li>
+<li id="lip4" class="fruta">Maçã</li>
+<li class="churras">Carne</li>
+<li class="churras">Linguiça</li>
+<li id="lip7" class="churras" draggable="true">Pão de alho</li>
+</ol>
+<h2>Explicação</h2>
+<p>Quando várias regras atingem o mesmo elemento, a que tem maior especificidade costuma vencer.</p>
+<table><tr><th>Item</th><th>Cor final</th><th>Motivo</th></tr>
+<tr><td>Abacaxi</td><td>Vermelho</td><td>Regra 1, que seleciona todos os li.</td></tr>
+<tr><td>Melão</td><td>Cinza</td><td>Regra 3, porque tem a classe fruta.</td></tr>
+<tr><td>Pera</td><td>Azul</td><td>Regra 6, pois o id lip2 tem prioridade sobre a classe.</td></tr>
+<tr><td>Uva</td><td>Laranja</td><td>Regra 7, que combina id lip3 e classe fruta.</td></tr>
+<tr><td>Maçã</td><td>Cinza</td><td>Regra 3, classe fruta.</td></tr>
+<tr><td>Carne</td><td>Preto</td><td>Regra 4, li vizinho de outro li e classe churras.</td></tr>
+<tr><td>Linguiça</td><td>Preto</td><td>Regra 4, pelo mesmo motivo.</td></tr>
+<tr><td>Pão de alho</td><td>Magenta</td><td>Regra 5, classe churras junto do atributo draggable=true.</td></tr>
+</table>
+<p>A regra 2 deixa os itens churras verdes se não houver uma regra mais específica. A regra 8 não é aplicada, pois não existe um elemento com id lip5.</p>
+<a href="index.html">Voltar</a>
+</body>
+</html>

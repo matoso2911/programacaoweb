@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividade 8 - Bandeiras</title>
+<style>
+body { font-family: Arial; margin: 25px; } nav a { margin-right: 12px; } section { margin: 30px 0; } .bandeira { width: 300px; height: 190px; border: 1px solid #bbb; position: relative; overflow: hidden; } #japao.bandeira { background: white; } #japao.bandeira > div.circulo { position: absolute; background: #bc002d; width: 115px; height: 115px; border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%,-50%); } #alemanha.bandeira { background: linear-gradient(to bottom, #000 0 33.33%, #dd0000 33.33% 66.66%, #ffce00 66.66%); } #holanda.bandeira { background: linear-gradient(to bottom, #ae1c28 0 33.33%, #fff 33.33% 66.66%, #21468b 66.66%); } #italia.bandeira { background: linear-gradient(to right, #009246 0 33.33%, #fff 33.33% 66.66%, #ce2b37 66.66%); } #brasil.bandeira { background: #009739; } #brasil.bandeira > .losango { width: 220px; height: 140px; background: #ffdf00; position: absolute; left: 40px; top: 25px; clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); } #brasil.bandeira > .circulo { width: 95px; height: 95px; border-radius: 50%; background: #002776; position: absolute; top: 47px; left: 102px; overflow: hidden; } #brasil.bandeira > .circulo > .faixa { width: 150px; height: 15px; background: white; position: absolute; top: 40px; left: -25px; transform: rotate(15deg); }
+</style>
+</head>
+<body>
+<h1>Bandeiras com HTML e CSS</h1><nav><a href="#japao">Japão</a><a href="#alemanha">Alemanha</a><a href="#holanda">Holanda</a><a href="#italia">Itália</a><a href="#brasil">Brasil</a></nav><section><h2>Japão</h2><div class="bandeira" id="japao"><div class="circulo"></div></div></section><section><h2>Alemanha</h2><div class="bandeira" id="alemanha"></div></section><section><h2>Holanda</h2><div class="bandeira" id="holanda"></div></section><section><h2>Itália</h2><div class="bandeira" id="italia"></div></section><section><h2>Brasil</h2><div class="bandeira" id="brasil"><div class="losango"></div><div class="circulo"><div class="faixa"></div></div></div></section><a href="index.html">Voltar</a>
+</body>
+</html>
