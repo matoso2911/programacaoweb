@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f2f2f2; }
+        .fotos { display: flex; gap: 8px; width: 90%; max-width: 1000px; height: 430px; margin: 60px auto; }
+        .foto { flex: 1; min-width: 0; border-radius: 18px; transition: flex 0.7s; background-size: cover; background-position: center; position: relative; overflow: hidden; }
+        .foto:hover { flex: 5; }
+        .foto span { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px 10px; color: white; background: linear-gradient(transparent, #0009); white-space: nowrap; overflow: hidden; }
+        .foto:nth-child(1) { background-image: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=900'); }
+        .foto:nth-child(2) { background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900'); }
+        .foto:nth-child(3) { background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900'); }
+        .foto:nth-child(4) { background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900'); }
+        .foto:nth-child(5) { background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900'); }
+        @media (max-width: 600px) { .fotos { height: 320px; width: 95%; gap: 4px; } .foto { border-radius: 9px; } }
+    </style>
+</head>
+<body>
+    <div class="fotos">
+        <div class="foto"><span>Natureza</span></div>
+        <div class="foto"><span>Floresta</span></div>
+        <div class="foto"><span>Lago</span></div>
+        <div class="foto"><span>Montanhas</span></div>
+        <div class="foto"><span>Paisagem</span></div>
+    </div>
+</body>
+</html>

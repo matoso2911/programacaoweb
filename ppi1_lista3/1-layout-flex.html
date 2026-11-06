@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; width: 100vw; height: 100vh; font-family: Arial, sans-serif; }
+        .pagina { height: 100%; display: flex; flex-direction: column; }
+        .topo { height: 18%; background: #272727; display: flex; align-items: center; padding-left: 25px; gap: 12px; }
+        .bolinha { width: 32px; height: 32px; background: #09b7b0; border-radius: 50%; }
+        .baixo { display: flex; flex: 1; min-height: 0; }
+        nav { width: 23%; background: #fa852d; text-align: center; padding: 22px 6px; color: white; }
+        .direita { flex: 1; display: flex; flex-direction: column; }
+        header { background: #08a4d1; height: 18%; display: flex; align-items: center; justify-content: center; color: white; }
+        main { background: #61509e; flex: 1; display: flex; align-items: center; justify-content: center; color: white; }
+        footer { height: 15%; background: #0b95b5; display: flex; align-items: center; justify-content: center; color: white; }
+        @media (max-width: 500px) { nav { width: 30%; } .topo { height: 14%; } }
+    </style>
+</head>
+<body>
+    <div class="pagina">
+        <div class="topo">
+            <div class="bolinha"></div>
+            <div class="bolinha"></div>
+            <div class="bolinha"></div>
+        </div>
+        <div class="baixo">
+            <nav>NAVEGAÇÃO</nav>
+            <div class="direita">
+                <header>CABEÇALHO</header>
+                <main>CONTEÚDO</main>
+                <footer>RODAPÉ</footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

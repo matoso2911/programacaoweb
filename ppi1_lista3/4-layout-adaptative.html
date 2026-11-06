@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; text-align: center; }
+        .site { display: grid; min-height: 100vh; gap: 5px; padding: 5px; grid-template-columns: 160px 1fr 160px; grid-template-rows: 65px 55px minmax(280px, 1fr) 55px 55px; grid-template-areas: "topo topo topo" "esq banner dir" "esq principal dir" "esq baixo dir" "rodape rodape rodape"; }
+        .site > * { display: flex; justify-content: center; align-items: center; }
+        header { grid-area: topo; background: #f3b500; }
+        .banner { grid-area: banner; background: #da493d; }
+        .esquerda { grid-area: esq; background: #19a068; }
+        main { grid-area: principal; background: #4388e8; }
+        .direita { grid-area: dir; background: #f3b500; }
+        .baixo { grid-area: baixo; background: #19a068; }
+        footer { grid-area: rodape; background: #4388e8; }
+        @media screen and (max-width: 600px) {
+            .site { grid-template-columns: 1fr; grid-template-rows: 55px 50px 50px minmax(300px,1fr) 50px 50px 50px; grid-template-areas: "topo" "banner" "esq" "principal" "dir" "baixo" "rodape"; }
+        }
+    </style>
+</head>
+<body>
+    <div class="site">
+        <header>Header</header>
+        <div class="banner">Banner</div>
+        <aside class="esquerda">Left Aside</aside>
+        <main>Main Content</main>
+        <aside class="direita">Right Aside</aside>
+        <div class="baixo">Low Content</div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
