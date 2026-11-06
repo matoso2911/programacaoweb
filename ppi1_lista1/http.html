@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTTP — Requisição e Resposta</title>
+</head>
+<body>
+  <header><h1>HTTP na prática: requisição e resposta</h1><nav aria-label="Navegação principal">
+  <a href="index.html">Início</a> |
+  <a href="historia_web.html">História da Web</a> |
+  <a href="http.html">HTTP</a> |
+  <a href="estados.html">Estados</a> |
+  <a href="curriculo.html">Currículo</a> |
+  <a href="contato.html">Contato</a>
+</nav></header><hr>
+  <main>
+    <h2>O que é HTTP?</h2>
+    <p>HTTP (Hypertext Transfer Protocol) é um protocolo usado para a comunicação entre cliente e servidor na Web. O navegador atua como <strong>cliente</strong>: envia uma <strong>requisição</strong> e recebe uma <strong>resposta</strong> do servidor.</p>
+    <h2>Cliente, servidor, requisição e resposta</h2>
+    <dl>
+      <dt>Cliente</dt><dd>Programa que solicita um recurso, como o navegador.</dd>
+      <dt>Servidor</dt><dd>Programa que recebe requisições e devolve recursos ou mensagens.</dd>
+      <dt>Requisição</dt><dd>Mensagem com método, caminho, cabeçalhos e, em alguns casos, corpo.</dd>
+      <dt>Resposta</dt><dd>Mensagem com código de status, cabeçalhos e, muitas vezes, conteúdo.</dd>
+    </dl>
+    <h2>Métodos GET e POST</h2>
+    <ul>
+      <li><strong>GET:</strong> solicita a representação de um recurso; dados de formulários GET costumam aparecer na URL.</li>
+      <li><strong>POST:</strong> envia dados para serem processados pelo servidor, normalmente no corpo da requisição.</li>
+    </ul>
+    <h2>Exemplo de requisição HTTP</h2>
+    <pre>GET /index.html HTTP/1.1
+Host: exemplo.com
+Accept: text/html</pre>
+    <h2>Exemplo de resposta HTTP</h2>
+    <pre>HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;&lt;body&gt;Olá!&lt;/body&gt;&lt;/html&gt;</pre>
+    <h2>Códigos de status</h2>
+    <table border="1">
+      <thead><tr><th>Código</th><th>Significado</th></tr></thead>
+      <tbody>
+        <tr><td>200</td><td>OK — requisição atendida</td></tr>
+        <tr><td>301</td><td>Moved Permanently — redirecionamento permanente</td></tr>
+        <tr><td>302</td><td>Found — redirecionamento temporário</td></tr>
+        <tr><td>400</td><td>Bad Request — requisição inválida</td></tr>
+        <tr><td>403</td><td>Forbidden — acesso negado</td></tr>
+        <tr><td>404</td><td>Not Found — recurso não encontrado</td></tr>
+        <tr><td>500</td><td>Internal Server Error — erro interno no servidor</td></tr>
+      </tbody>
+    </table>
+    <p><a href="index.html">Voltar ao início</a></p>
+  </main>
+</body>
+</html>

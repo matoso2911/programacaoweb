@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200" role="img" aria-label="Navegador requisita conteúdo a servidor">
+<rect width="500" height="200" fill="#eff8f4"/><rect x="22" y="55" width="145" height="92" rx="8" fill="#fff" stroke="#2d7560" stroke-width="3"/>
+<rect x="22" y="55" width="145" height="19" rx="8" fill="#a9dccc"/><text x="95" y="108" text-anchor="middle" font-family="sans-serif" font-size="16">Navegador</text>
+<rect x="340" y="55" width="140" height="92" rx="8" fill="#fff" stroke="#2d7560" stroke-width="3"/><text x="410" y="107" text-anchor="middle" font-family="sans-serif" font-size="16">Servidor</text>
+<path d="M170 85 H335" stroke="#2d7560" stroke-width="4"/><path d="M325 77 L335 85 L325 93" fill="none" stroke="#2d7560" stroke-width="4"/>
+<path d="M337 120 H172" stroke="#2d7560" stroke-width="4"/><path d="M182 112 L172 120 L182 128" fill="none" stroke="#2d7560" stroke-width="4"/>
+<text x="252" y="77" text-anchor="middle" font-family="sans-serif" font-size="12">Requisição</text><text x="252" y="140" text-anchor="middle" font-family="sans-serif" font-size="12">Resposta</text>
+</svg>
